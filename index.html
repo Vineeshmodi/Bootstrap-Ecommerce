@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+      integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"
+      integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!--  start of navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-1">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/"
+          ><img class="logo" src="./images/logo.JPG"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="/">Home </a>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Categories
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="#products">Cameras</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#products">Apple Gadjets</a>
+                </li>
+
+                <li>
+                  <a class="dropdown-item" href="#products">Drones</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./register.html">Register </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="/cart.html"
+                ><i class="bi bi-cart-plus-fill"></i></i>cart<span
+                class="badge bg-success"
+                >4</span
+              >  
+              </a>
+            </li>
+          </ul>
+
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+              data-bs-toggle="tooltip"
+              data-bs-placement="bottom"
+              data-bs-title="Type here to search"
+            />
+            <button class="btn btn-outline-warning" type="submit">
+              Search
+            </button>
+          </form>
+          <ul class="navbar-nav mb-2 mb-lg-0 mx-lg-2 order-sm-last">
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="myaccount"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                My Account
+              </a>
+              <ul
+                class="dropdown-menu bg-dark text-light"
+                aria-labelledby="navbarDropdown"
+              >
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="/#"
+                    data-bs-toggle="modal"
+                    data-bs-target="#exampleModal"
+                    >My Orders</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="/#"
+                    data-bs-toggle="modal"
+                    data-bs-target="#exampleModal"
+                    >Profile</a
+                  >
+                </li>
+
+                <li><a class="dropdown-item" href="/#">Logout</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- End of navbar -->
+
+    <!-- start of carousel -->
+    <div
+      id="carouselExampleCaptions"
+      class="carousel slide mb-4"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="2000">
+          <img src="./images/product-6-1.jpg" class="d-block w-100" alt="..." />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>First slide label</h5>
+            <p>Some representative placeholder content for the first slide.</p>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="2000">
+          <img src="./images/product-6-3.jpg" class="d-block w-100" alt="..." />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Second slide label</h5>
+            <p>Some representative placeholder content for the second slide.</p>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="2000">
+          <img src="./images/product-6-2.jpg" class="d-block w-100" alt="..." />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Third slide label</h5>
+            <p>Some representative placeholder content for the third slide.</p>
+          </div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <!-- end of carousel -->
+
+    <!-- start of product page -->
+    <div class="container mb-5">
+      <div class="row" id="products">
+        <div class="col-xl-3 col-md-4 col-sm-6 position-relative">
+          <i class="bi bi-heart-fill position-absolute liked  "></i>
+          <i class="bi bi-heart position-absolute like  "></i>
+          <div class="card productitem">
+            <img
+              src="./images//product-5-2.jpg"
+              class="card-img-top"
+              onclick="goToProductDetail()"
+              alt="..."
+              data-bs-toggle="tooltip"
+              data-bs-placement="top"
+              data-bs-title="Click to view more"
+            />
+            <div class="card-body">
+              <h6 class="card-subtitle mb-2 text-muted">Category</h6>
+              <h5 class="card-title">samasumg headphones</h5>
+
+              <p class="card-text">
+                $500<span class="mx-auto float-end ratingstar"
+                  ><i class="bi bi-star-half"></i><i class="bi bi-star-half"></i
+                  ><i class="bi bi-star-half"></i><i class="bi bi-star-half"></i
+                  ><i class="bi bi-star-half"></i
+                ></span>
+              </p>
+
+              <div class="text-center">
+                <a
+                  class="btn btn-dark w-100"
+                  onclick="showToast()"
+                  role="button"
+                  >Add To cart
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-3 col-md-4 col-sm-6 position-relative">
+          <i class="bi bi-heart-fill position-absolute liked  "></i>
+          <i class="bi bi-heart position-absolute like  "></i>
+          <div class="card productitem">
+            <img
+              src="./images//product-5-2.jpg"
+              class="card-img-top"
+              onclick="goToProductDetail()"
+              alt="..."
+              data-bs-toggle="tooltip"
+              data-bs-placement="top"
+              data-bs-title="Click to view more"
+            />
+            <div class="card-body">
+              <h6 class="card-subtitle mb-2 text-muted">Category</h6>
+              <h5 class="card-title">samasumg headphones</h5>
+
+              <p class="card-text">
+                $500<span class="mx-auto float-end ratingstar"
+                  ><i class="bi bi-star-half"></i><i class="bi bi-star-half"></i
+                  ><i class="bi bi-star-half"></i><i class="bi bi-star-half"></i
+                  ><i class="bi bi-star-half"></i
+                ></span>
+              </p>
+
+              <div class="text-center">
+                <a
+                  class="btn btn-dark w-100"
+                  onclick="showToast()"
+                  role="button"
+                  >Add To cart
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-3 col-md-4 col-sm-6 position-relative">
+          <i class="bi bi-heart-fill position-absolute liked  "></i>
+          <i class="bi bi-heart position-absolute like  "></i>
+          <div class="card productitem">
+            <img
+              src="./images//product-5-2.jpg"
+              class="card-img-top"
+              onclick="goToProductDetail()"
+              alt="..."
+              data-bs-toggle="tooltip"
+              data-bs-placement="top"
+              data-bs-title="Click to view more"
+            />
+            <div class="card-body">
+              <h6 class="card-subtitle mb-2 text-muted">Category</h6>
+              <h5 class="card-title">samasumg headphones</h5>
+
+              <p class="card-text">
+                $500<span class="mx-auto float-end ratingstar"
+                  ><i class="bi bi-star-half"></i><i class="bi bi-star-half"></i
+                  ><i class="bi bi-star-half"></i><i class="bi bi-star-half"></i
+                  ><i class="bi bi-star-half"></i
+                ></span>
+              </p>
+
+              <div class="text-center">
+                <a
+                  class="btn btn-dark w-100"
+                  onclick="showToast()"
+                  role="button"
+                  >Add To cart
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-3 col-md-4 col-sm-6 position-relative">
+          <i class="bi bi-heart-fill position-absolute liked  "></i>
+          <i class="bi bi-heart position-absolute like  "></i>
+          <div class="card productitem">
+            <img
+              src="./images//product-5-2.jpg"
+              class="card-img-top"
+              onclick="goToProductDetail()"
+              alt="..."
+              data-bs-toggle="tooltip"
+              data-bs-placement="top"
+              data-bs-title="Click to view more"
+            />
+            <div class="card-body">
+              <h6 class="card-subtitle mb-2 text-muted">Category</h6>
+              <h5 class="card-title">samasumg headphones</h5>
+
+              <p class="card-text">
+                $500<span class="mx-auto float-end ratingstar"
+                  ><i class="bi bi-star-half"></i><i class="bi bi-star-half"></i
+                  ><i class="bi bi-star-half"></i><i class="bi bi-star-half"></i
+                  ><i class="bi bi-star-half"></i
+                ></span>
+              </p>
+
+              <div class="text-center">
+                <a
+                  class="btn btn-dark w-100"
+                  onclick="showToast()"
+                  role="button"
+                  >Add To cart
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-3 col-md-4 col-sm-6 position-relative">
+          <i class="bi bi-heart-fill position-absolute liked  "></i>
+          <i class="bi bi-heart position-absolute like  "></i>
+          <div class="card productitem">
+            <img
+              src="./images//product-5-2.jpg"
+              class="card-img-top"
+              onclick="goToProductDetail()"
+              alt="..."
+              data-bs-toggle="tooltip"
+              data-bs-placement="top"
+              data-bs-title="Click to view more"
+            />
+            <div class="card-body">
+              <h6 class="card-subtitle mb-2 text-muted">Category</h6>
+              <h5 class="card-title">samasumg headphones</h5>
+
+              <p class="card-text">
+                $500<span class="mx-auto float-end ratingstar"
+                  ><i class="bi bi-star-half"></i><i class="bi bi-star-half"></i
+                  ><i class="bi bi-star-half"></i><i class="bi bi-star-half"></i
+                  ><i class="bi bi-star-half"></i
+                ></span>
+              </p>
+
+              <div class="text-center">
+                <a
+                  class="btn btn-dark w-100"
+                  onclick="showToast()"
+                  role="button"
+                  >Add To cart
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-3 col-md-4 col-sm-6 position-relative">
+          <i class="bi bi-heart-fill position-absolute liked  "></i>
+          <i class="bi bi-heart position-absolute like  "></i>
+          <div class="card productitem">
+            <img
+              src="./images//product-5-2.jpg"
+              class="card-img-top"
+              onclick="goToProductDetail()"
+              alt="..."
+              data-bs-toggle="tooltip"
+              data-bs-placement="top"
+              data-bs-title="Click to view more"
+            />
+            <div class="card-body">
+              <h6 class="card-subtitle mb-2 text-muted">Category</h6>
+              <h5 class="card-title">samasumg headphones</h5>
+
+              <p class="card-text">
+                $500<span class="mx-auto float-end ratingstar"
+                  ><i class="bi bi-star-half"></i><i class="bi bi-star-half"></i
+                  ><i class="bi bi-star-half"></i><i class="bi bi-star-half"></i
+                  ><i class="bi bi-star-half"></i
+                ></span>
+              </p>
+
+              <div class="text-center">
+                <a
+                  class="btn btn-dark w-100"
+                  onclick="showToast()"
+                  role="button"
+                  >Add To cart
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-3 col-md-4 col-sm-6 position-relative">
+          <i class="bi bi-heart-fill position-absolute liked  "></i>
+          <i class="bi bi-heart position-absolute like  "></i>
+          <div class="card productitem">
+            <img
+              src="./images//product-5-2.jpg"
+              class="card-img-top"
+              onclick="goToProductDetail()"
+              alt="..."
+              data-bs-toggle="tooltip"
+              data-bs-placement="top"
+              data-bs-title="Click to view more"
+            />
+            <div class="card-body">
+              <h6 class="card-subtitle mb-2 text-muted">Category</h6>
+              <h5 class="card-title">samasumg headphones</h5>
+
+              <p class="card-text">
+                $500<span class="mx-auto float-end ratingstar"
+                  ><i class="bi bi-star-half"></i><i class="bi bi-star-half"></i
+                  ><i class="bi bi-star-half"></i><i class="bi bi-star-half"></i
+                  ><i class="bi bi-star-half"></i
+                ></span>
+              </p>
+
+              <div class="text-center">
+                <a
+                  class="btn btn-dark w-100"
+                  onclick="showToast()"
+                  role="button"
+                  >Add To cart
+                </a>
+              </div>
+            </div>
+          </div>
+        </div> <div class="col-xl-3 col-md-4 col-sm-6 position-relative">
+          <i class="bi bi-heart-fill position-absolute liked  "></i>
+          <i class="bi bi-heart position-absolute like  "></i>
+          <div class="card productitem">
+            <img
+              src="./images//product-5-2.jpg"
+              class="card-img-top"
+              onclick="goToProductDetail()"
+              alt="..."
+              data-bs-toggle="tooltip"
+              data-bs-placement="top"
+              data-bs-title="Click to view more"
+            />
+            <div class="card-body">
+              <h6 class="card-subtitle mb-2 text-muted">Category</h6>
+              <h5 class="card-title">samasumg headphones</h5>
+
+              <p class="card-text">
+                $500<span class="mx-auto float-end ratingstar"
+                  ><i class="bi bi-star-half"></i><i class="bi bi-star-half"></i
+                  ><i class="bi bi-star-half"></i><i class="bi bi-star-half"></i
+                  ><i class="bi bi-star-half"></i
+                ></span>
+              </p>
+
+              <div class="text-center">
+                <a
+                  class="btn btn-dark w-100"
+                  onclick="showToast()"
+                  role="button"
+                  >Add To cart
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+       
+      </div>
+    </div>
+    <!--end of product page -->
+    <!-- start of footer-->
+    <div class="footer mt-5 bg-dark text-light">
+      <div class="container py-3">
+        <div class="row d-flex footeritem">
+          <div class="col">
+            <h5>Categories</h5>
+            <ul>
+              <li><a href="">Cameras</a></li>
+              <li><a href="">Cameras</a></li>
+              <li><a href="">Cameras</a></li>
+              <li><a href="">Cameras</a></li>
+              <li><a href="">Cameras</a></li>
+            </ul>
+          </div>
+
+          <div class="col">
+            <h5>Useful Links</h5>
+            <ul>
+              <li><a href="">Cameras</a></li>
+              <li><a href="">Cameras</a></li>
+              <li><a href="">Cameras</a></li>
+              <li><a href="">Cameras</a></li>
+              <li><a href="">Cameras</a></li>
+            </ul>
+          </div>
+          <div class="col">
+            <h5>Get Updates</h5>
+            <div class="d-flex subscribe">
+              <input type="text" class="form-control" />
+              <button class="btn btn-warning">Subscribe</button>
+            </div>
+            <div class="btn-group me-2 mt-2 socialicon" role="group" aria-label="First group">
+              <button type="button" class="btn btn-dark mx-1"><i class="bi bi-facebook"></i></button>
+              <button type="button" class="btn btn-dark mx-1"><i class="bi bi-twitter"></i></button>
+              <button type="button" class="btn btn-dark mx-1"><i class="bi bi-youtube"></i></button>
+              <button type="button" class="btn btn-dark mx-1"><i class="bi bi-instagram"></i></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end of footer-->
+
+    <!-- start of toast-->
+    <div
+      class="toast align-items-center text-white bg-primary position-fixed top-0"
+      role="alert"
+      aria-live="assertive"
+      aria-atomic="true"
+    >
+      <div class="d-flex">
+        <div class="toast-body">Item Is successfully Added To Your Cart</div>
+        <button
+          type="button"
+          class="btn-close btn-close-white me-2 m-auto"
+          data-bs-dismiss="toast"
+          aria-label="Close"
+        ></button>
+      </div>
+    </div>
+    <!-- end of toast-->
+
+    <!------------modal start-->
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-body">
+            You Will Need To Login of check Your Account
+          </div>
+          <div class="modal-footer">
+            <a href="./login.html" type="button" class="btn btn-primary"
+              >Go To Login</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- sctipt to ass showtoast function-->
+    <script src="./app.js"></script>
+  </body>
+</html>
